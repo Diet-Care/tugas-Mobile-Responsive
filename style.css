@@ -15,3 +15,7 @@
 .colors-blue{
     color: #56C4F2;
 }
+
+.color-blue:hover{
+    color: #56C4F2;
+}
