@@ -4,7 +4,108 @@
 * {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-family: 'Roboto Slab', serif;
+    box-sizing: border-box;
 }
+
+
+/* CSS ALI (EDIT AJA KALO ADA YG JELEK) */
+main, section {
+overflow-x: hidden;
+}
+
+:root {
+    --Snigle-font:'Sniglet',cursive;
+    --Rubik:'Rubik',cursive;
+    --Patua:'Patua',cursive;
+    --Plus:'Plus Jakarta Sans', sans-serif;
+    --Lobster:'Lobster',cursive;
+    --light-black:#2e2c2caf;
+    --bggradient:linear-gradient(to bottom, #56C4F2, #ddd);
+    --light-gray: rgba(255,255,255,0.75);
+}
+
+/* main a{
+    font-family: var(--Plus);
+    font-size: 0.9em;
+    color: #56C4F2;
+} */
+
+main .row .col-md-5{
+    padding: 4.2vmin 1vmin;
+}
+
+main .row .col-md-7{
+    padding: 22vmin 1vmin;
+    padding-bottom: 35vmin;
+}
+
+main .row .col-md-5 img {
+    width: 120%;
+}
+
+main .container .col-md-7 h6 {
+    padding: 1vmin;
+    letter-spacing: 4px;
+}
+
+main .container .col-md-7 h1 {
+    font-size: 8.5vmin;
+    font-weight: bold;
+    padding: 0.1em 0em;
+}
+
+main .container .col-md-7 p {
+    padding: 1vmin;
+}
+
+main .container .col-md-7 button{
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+/* SECTION 1 */
+.section-1 {
+    padding: 20vmin 0;
+}
+
+.section-1 .row .col-md-6 .pray img {
+    opacity: 0.8;
+    width: 80%;
+    border-radius: 0.2em;
+}
+
+.section-1 .row .col-md-6:last-child{
+    position: relative;
+}
+
+.section-1 .row .col-md-6 .panel {
+    position: absolute;
+    top: 7vmin;
+    left: -18vmin;
+    background: white;
+    border-radius: 3px;
+    text-align: left;
+    padding: 13vmin 5vmin 20vmin 10vmin;
+    box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+    font-family: var(--Plus);
+    z-index: 1;
+}
+
+
+.section-2 {
+    
+}
+
+.card img {
+    width: 254px;
+    height: 150px;
+}
+
+.card p {
+    font-size: 14px;
+}
+
+/* CSS ALI (EDIT AJA KALO ADA YANG JELEK) */
 
 .footer{
     border-top: 1px solid #56C4F2;
