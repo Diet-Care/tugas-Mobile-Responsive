@@ -24,12 +24,6 @@ overflow-x: hidden;
     --light-gray: rgba(255,255,255,0.75);
 }
 
-/* main a{
-    font-family: var(--Plus);
-    font-size: 0.9em;
-    color: #56C4F2;
-} */
-
 main .row .col-md-5{
     padding: 4.2vmin 1vmin;
 }
