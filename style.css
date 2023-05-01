@@ -116,3 +116,23 @@ main .container .col-md-7 button{
 .colors-blue{
     color: #56C4F2;
 }
+
+.color-blue:hover{
+    color: #56C4F2;
+}
+
+/* relative */
+.relative{
+    position: relative;
+    margin: auto;
+}
+
+.text-absolute{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+    
+}
+.pb-10{
+    padding-bottom: 15%;
+}
