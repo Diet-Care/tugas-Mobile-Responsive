@@ -34,9 +34,9 @@ main .row .col-md-5{
     padding: 4.2vmin 1vmin;
 }
 
-main .row .col-md-7{
+.col-md-7{
     padding: 22vmin 1vmin;
-    padding-bottom: 35vmin;
+    
 }
 
 main .row .col-md-5 img {
@@ -65,7 +65,7 @@ main .container .col-md-7 button{
 
 /* SECTION 1 */
 .section-1 {
-    padding: 20vmin 0;
+    padding: 10vmin 0;
 }
 
 .section-1 .row .col-md-6 .pray img {
