@@ -5,29 +5,25 @@
     --main-color:#56C4F2;
 }
 
-.card{
+.card-header h5 {
+    color: var(--main-color);
+    font-family: var(--Plus);
+}
+
+.card {
     box-shadow: -2px 10px 12px -6px rgba(0,0,0,0.75);
     -webkit-box-shadow: -2px 10px 12px -6px rgba(0,0,0,0.75);
     -moz-box-shadow: -2px 10px 12px -6px rgba(0,0,0,0.75);
 }
 
-.card-header h5{
-    font-family: var(--Plus);
-    color: var(--main-color);
-}
-
-.btn-login button {
+.btn-daftar button {
     width: 100%;
 }
 
-.form-text {
+.notif p {
     color: #b5b5b5;
 }
 
-.login-with {
-    color: #b5b5b5;
-}
-
-a{
+a {
     text-decoration: none;
 }
