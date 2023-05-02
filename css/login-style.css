@@ -16,6 +16,10 @@
     color: var(--main-color);
 }
 
+.btn-login button {
+    width: 100%;
+}
+
 .form-text {
     color: #b5b5b5;
 }
