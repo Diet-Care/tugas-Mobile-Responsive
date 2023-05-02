@@ -14,7 +14,7 @@ function parseRes(res){
         fullEdukasi.innerHTML +=  `
         <div class="col-3 mb-5" >
         <div class="card">
-        <img src="${edukasi.image}" class="card-img-top" alt="${edukasi.judul}" style="width: 100%;">
+        <img src="${edukasi.image}" class="card-img-top" alt="${edukasi.judul}" style="width: 100%; height: 200px;">
             <div class="card-body">
             <h5 class="card-title">${edukasi.judul}</h5>
             <p class="card-text">${edukasi.deskripsi}</a>

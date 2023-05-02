@@ -85,10 +85,6 @@ main .container .col-md-7 button{
     z-index: 1;
 }
 
-<<<<<<< HEAD:style.css
-
-=======
->>>>>>> 24aa99027842132ce33c07fe6780ed4e8dfbd92e:css/style.css
 .card img {
     width: 254px;
     height: 150px;
@@ -114,6 +110,9 @@ main .container .col-md-7 button{
     color: #56C4F2;
 }
 
+.mt-7{
+    margin-top: 10%;
+}
 /* relative */
 .relative{
     position: relative;
