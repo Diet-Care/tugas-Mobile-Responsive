@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300&family=Roboto+Slab:wght@100;200;300;400;500;600&display=swap');
+
+:root {
+    --Plus:'Plus Jakarta Sans', sans-serif;
+    --main-color:#56C4F2;
+}
+
+.card{
+    box-shadow: -2px 10px 12px -6px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -2px 10px 12px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 10px 12px -6px rgba(0,0,0,0.75);
+}
+
+.card-header h5{
+    font-family: var(--Plus);
+    color: var(--main-color);
+}
+
+.btn-login button {
+    width: 100%;
+}
+
+.form-text {
+    color: #b5b5b5;
+}
+
+.login-with {
+    color: #b5b5b5;
+}
+
+a{
+    text-decoration: none;
+}

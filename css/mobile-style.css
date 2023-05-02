@@ -1,0 +1,41 @@
+@media only screen and (max-width:768px){
+    .section-1 .row .col-md-6 .panel {
+        position: initial;
+        width: initial;
+        height: initial;
+    }
+
+    .section-1 .col-md-6 img {
+        display: none;
+    }
+
+    .cover{
+        width: 100%;
+        background: url("../assets/bg-main.jpg");
+        background-size: 100%;
+        text-align: center;
+        position: relative;
+    }
+
+    .cover .container {
+        background: rgba(0, 0, 0, 0.7);
+        height: 100%;
+        width: 100%;
+    }
+    .cover .container h1{
+        font-family: Plus Jakarta Sans, sans-serif;
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    .cover .container p {
+        padding: 0 10%;
+        font-family: Plus Jakarta Sans, sans-serif;
+        color: white;
+        font-size: 0.7rem;
+    }
+
+    .cover .col-md-5 img {
+        display: none;
+    }
+}

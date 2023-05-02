@@ -24,12 +24,6 @@ overflow-x: hidden;
     --light-gray: rgba(255,255,255,0.75);
 }
 
-/* main a{
-    font-family: var(--Plus);
-    font-size: 0.9em;
-    color: #56C4F2;
-} */
-
 main .row .col-md-5{
     padding: 4.2vmin 1vmin;
 }
@@ -91,7 +85,10 @@ main .container .col-md-7 button{
     z-index: 1;
 }
 
+<<<<<<< HEAD:style.css
 
+=======
+>>>>>>> 24aa99027842132ce33c07fe6780ed4e8dfbd92e:css/style.css
 .card img {
     width: 254px;
     height: 150px;
