@@ -1,7 +1,4 @@
-
 import { getDietMakanan } from "./routediet.js";
-
-// import { getFourEdukasi } from "./edukasi";
 
 
 export function hitungDiet(){
@@ -13,7 +10,6 @@ export function hitungDiet(){
 
     // variabel form
     const form = document.getElementById('form');
-
 
     btnSubmit.addEventListener('click', function(){
         // input berat
@@ -28,61 +24,32 @@ export function hitungDiet(){
         // total hitungan bmi
         const bmitotal = document.getElementById("total-bmi");
 
-    // variabel text-form
-    // const resettext = document.getElementById('text-reset');
-
-    btnSubmit.addEventListener('click', function(){
-        const bb = document.getElementById("inputBerat").value;
-        const tb = document.getElementById("inputTinggi").value;
-        const usia = document.getElementById("inputUsia").value;
-
-
-        const bmitotal = document.getElementById("total-bmi");
-
         const bmicategory = document.getElementById("BMI-category");
         
         const hasilumur = document.getElementById("umur");
 
-
         // rumus bmi
-
-        // const edu = document.getElementById("edu");
-
         const bmi = Number(bb)/(Number(tb)/100)**2;
         
         bmitotal.innerText = bmi.toFixed(1);
         
         if(bmi < 18.5){
         bmicategory.innerText = "Underweight";
-
         hasilumur.innerText = ` ${usia} kamu harus melakukan diet dibawah ini`;
         bmicategory.style.color = "rgb(245, 147, 0)"; 
         getDietMakanan();
         } else if(bmi <= 24.9 ){
             bmicategory.innerText = "Normal Weight";
             hasilumur.innerText = ` ${usia} kamu harus melakukan diet dibawah ini`;
-
-        hasilumur.innerText = ` ${usia} kamu harus melakukan diet ini`;
-        bmicategory.style.color = "rgb(245, 147, 0)"; 
-        // edu.innerHTML= `${getFourEdukasi()}`;
-        } else if(bmi <= 24.9 ){
-            bmicategory.innerText = "Normal Weight";
-            hasilumur.innerText = ` ${usia} kamu harus melakukan diet ini`;
-
             bmicategory.style.color = "green"; 
           
         } else if(bmi <= 29.9){
             bmicategory.innerText = "Overweight";
-
             hasilumur.innerText = ` ${usia} kamu harus melakukan diet dibawah ini`;
-
-            hasilumur.innerText = ` ${usia} kamu harus melakukan diet ini`;
-
             bmicategory.style.color = "red"; 
         } else{
             bmicategory.innerText = "Obesity";
             bmicategory.style.color = "red"; 
-
             hasilumur.innerText = ` ${usia} kamu harus melakukan diet dibawah ini`;
         }
         
@@ -102,14 +69,5 @@ export function hitungDiet(){
       bmicategory.innerText = '';
       hasilumur.innerText = '';
     });
-
-        }
-    });
-
-    btnreset.addEventListener('click', () =>{
-      form.reset();
-
-    });
-
 
 }
