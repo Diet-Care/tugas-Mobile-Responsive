@@ -1,4 +1,5 @@
 
+
 export async function getFullEdukasi(){
   try {
         const response = await fetch("https://6436ce2c3e4d2b4a12dc3844.mockapi.io/api/edukasi");
@@ -7,6 +8,46 @@ export async function getFullEdukasi(){
   } catch (error) {
         error
   }
+
+// menampilkan semua tampilan API Edukasi
+export async function getFullEdukasi(){
+    try {
+          const response = await fetch("https://6436ce2c3e4d2b4a12dc3844.mockapi.io/api/edukasi");
+          
+        return parseFullRes(await response.json());
+    } catch (error) {
+         error
+    }
+}
+
+function parseFullRes(res){
+    const fullEdukasi = document.getElementById('getFullEdukasi');
+    res.forEach((edukasi) => {
+        fullEdukasi.innerHTML +=  `
+        <div class="col-md-3 mb-5" >
+            <div class="card">
+                <img src="${edukasi.image}" class="card-img-top" alt="${edukasi.judul}" style="width: 100%; height: 200px;">
+                <div class="card-body">
+                    <h5 class="card-title">${edukasi.judul}</h5>
+                    <p class="card-text">${edukasi.deskripsi}</a>
+                </div>
+                <button  class="btn btn-info ms-3 mb-3 text-white" style="width: 50%;" type="button" data-bs-target="#modal-${edukasi.id}" data-bs-toggle="modal">Selengkapnya</button>
+            </div>
+        </div>    
+        `;
+    })
+};
+
+// menampilkan getFulledukasi berdasarkan id tampilan API Edukasi
+export async function getFullIdEdukasi(){
+    try {
+          const response = await fetch("https://6436ce2c3e4d2b4a12dc3844.mockapi.io/api/edukasi");
+          
+        return parseFullIdRes(await response.json());
+    } catch (error) {
+          error
+    }
+
 }
 
 function parseFullIdRes(res){
@@ -48,6 +89,7 @@ function parseFullIdRes(res){
 };
 
 export async function getFourEdukasi(){
+
   try {
         const response = await fetch("https://6436ce2c3e4d2b4a12dc3844.mockapi.io/api/edukasi");
         
@@ -57,6 +99,51 @@ export async function getFourEdukasi(){
     // const eror = document.getElementById("pesan")
     //    eror.innerHTML = error;
   }
+
+    try {
+          const response = await fetch("https://6436ce2c3e4d2b4a12dc3844.mockapi.io/api/edukasi");
+        return parseFourRes(await response.json());
+    } catch (error) {
+     error
+    }
+}
+
+function parseFourRes(res){
+    
+    const fourEdukasi = document.getElementById('getFourEdukasi');
+    
+    const filteredResponse = res.slice(0,4);
+    
+
+    for (const res of filteredResponse) {
+        fourEdukasi.innerHTML += `
+        <div class="col-md-3 mb-5" >
+            <div class="card">
+                <img src="${res.image}" class="card-img-top" alt="${res.judul}" style="width: 100%; height: 200px;">
+                <div class="card-body">
+                    <h5 class="card-title">${res.judul}</h5>
+                    <p class="card-text">${res.deskripsi}</a>
+                    <button  class="btn btn-info ms-3 mb-3 text-white" style="width: 50%;" type="button" data-bs-target="#modal-${edukasi.id}" data-bs-toggle="modal">Selengkapnya</button>
+                </div>
+            </div>
+        </div>    
+        `
+    };
+};
+
+
+// menampilkan getFouredukasi berdasarkan id tampilan API Edukasi
+export async function getFourIdEdukasi(){
+    try {
+          const response = await fetch("https://6436ce2c3e4d2b4a12dc3844.mockapi.io/api/edukasi");
+          
+        return parseFourIdRes(await response.json());
+    } catch (error) {
+      error
+      // const eror = document.getElementById("pesan")
+      //    eror.innerHTML = error;
+    }
+
 }
 
 function parseFourIdRes(res){
