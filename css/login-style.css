@@ -5,29 +5,25 @@
     --main-color:#56C4F2;
 }
 
+*{
+    font-family: var(--Plus);
+}
+
 .card{
     box-shadow: -2px 10px 12px -6px rgba(0,0,0,0.75);
     -webkit-box-shadow: -2px 10px 12px -6px rgba(0,0,0,0.75);
     -moz-box-shadow: -2px 10px 12px -6px rgba(0,0,0,0.75);
 }
-
 .card-header h5{
-    font-family: var(--Plus);
     color: var(--main-color);
 }
 
 .btn-login button {
+    background-color: var(--main-color);
     width: 100%;
 }
 
-.form-text {
-    color: #b5b5b5;
-}
-
-.login-with {
-    color: #b5b5b5;
-}
-
-a{
-    text-decoration: none;
+.btn-login button:hover {
+    background-color: #4db1db;
+    transition: 0.5s;
 }
