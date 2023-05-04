@@ -1,10 +1,10 @@
+import { hitungDiet } from "./modules/diet.js";
 import { getFullEdukasi, getFourEdukasi, getFullIdEdukasi, getFourIdEdukasi } from "./modules/edukasi.js";
-import { login } from "./modules/login.js";
-// import { mockapi } from "./modules/mockapi.js";
+// import { login } from "./modules/login.js";
 
-// mockapi();
 getFullEdukasi();
 getFourEdukasi();
 getFullIdEdukasi();
 getFourIdEdukasi();
+hitungDiet();
 login();
