@@ -1,3 +1,5 @@
+// import { getFourEdukasi } from "./edukasi";
+
 
 export function hitungDiet(){
     // variabel submit
@@ -10,7 +12,7 @@ export function hitungDiet(){
     const form = document.getElementById('form');
 
     // variabel text-form
-    const resettext = document.getElementById('text-reset');
+    // const resettext = document.getElementById('text-reset');
 
     btnSubmit.addEventListener('click', function(){
         const bb = document.getElementById("inputBerat").value;
@@ -23,6 +25,8 @@ export function hitungDiet(){
         
         const hasilumur = document.getElementById("umur");
 
+        // const edu = document.getElementById("edu");
+
         const bmi = Number(bb)/(Number(tb)/100)**2;
         
         bmitotal.innerText = bmi.toFixed(1);
@@ -31,10 +35,12 @@ export function hitungDiet(){
         bmicategory.innerText = "Underweight";
         hasilumur.innerText = ` ${usia} kamu harus melakukan diet ini`;
         bmicategory.style.color = "rgb(245, 147, 0)"; 
+        // edu.innerHTML= `${getFourEdukasi()}`;
         } else if(bmi <= 24.9 ){
             bmicategory.innerText = "Normal Weight";
             hasilumur.innerText = ` ${usia} kamu harus melakukan diet ini`;
             bmicategory.style.color = "green"; 
+          
         } else if(bmi <= 29.9){
             bmicategory.innerText = "Overweight";
             hasilumur.innerText = ` ${usia} kamu harus melakukan diet ini`;
@@ -47,7 +53,7 @@ export function hitungDiet(){
 
     btnreset.addEventListener('click', () =>{
       form.reset();
-      resettext.reset();
+
     });
 
 
