@@ -5,7 +5,7 @@ export async function getFullEdukasi(){
           
         return parseFullRes(await response.json());
     } catch (error) {
-          console.error("ini ada yang error",error);
+         error
     }
 }
 
@@ -34,7 +34,7 @@ export async function getFullIdEdukasi(){
           
         return parseFullIdRes(await response.json());
     } catch (error) {
-          console.error("ini ada yang error",error);
+          error
     }
 }
 
@@ -84,7 +84,7 @@ export async function getFourEdukasi(){
           const response = await fetch("https://6436ce2c3e4d2b4a12dc3844.mockapi.io/api/edukasi");
         return parseFourRes(await response.json());
     } catch (error) {
-          console.error("ini ada yang error", error);
+     error
     }
 }
 
@@ -119,7 +119,9 @@ export async function getFourIdEdukasi(){
           
         return parseFourIdRes(await response.json());
     } catch (error) {
-          console.error("ini ada yang error",error);
+      error
+      // const eror = document.getElementById("pesan")
+      //    eror.innerHTML = error;
     }
 }
 
