@@ -42,27 +42,31 @@ export function hitungDiet(){
         hasilumur.innerText = ` ${usia} kamu harus melakukan diet dibawah ini`;
         
         bmicategory.style.color = "rgb(245, 147, 0)"; 
+        teksmakan.innerText = "Rekomendasi Makan";
+        teksolgraga.innerText = "Rekomendasi Olahraga";
         getDietMakanan();
         getfourdietOlhraga();
         } else if(bmi <= 24.9 ){
             bmicategory.innerText = "Normal Weight";
             hasilumur.innerText = ` ${usia} kamu harus melakukan diet dibawah ini`;
             bmicategory.style.color = "green"; 
+            teksmakan.innerText = "Rekomendasi Makan";
+            teksolgraga.innerText = "Rekomendasi Olahraga";
             getDietMakanan();
             getfourdietOlhraga();
         } else if(bmi <= 29.9){
             bmicategory.innerText = "Overweight";
             hasilumur.innerText = ` ${usia} kamu harus melakukan diet dibawah ini`;
             bmicategory.style.color = "red"; 
+            teksolgraga.innerText = "Rekomendasi Olahraga";
             getfourdietOlhraga();
         } else{
             bmicategory.innerText = "Obesity";
             bmicategory.style.color = "red"; 
             hasilumur.innerText = ` ${usia} kamu harus melakukan diet dibawah ini`;
+            teksolgraga.innerText = "Rekomendasi Olahraga";
             getfourdietOlhraga();
         }
-        teksolgraga.innerText = "Rekomendasi Olahraga";
-        teksmakan.innerText = "Rekomendasi Makan";
         
     });
 
