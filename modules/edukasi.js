@@ -22,7 +22,7 @@ function parseFullIdRes(res){
                   <p class="card-text">${edukasi.deskripsi}</a>
               </div>
               
-              <button  class="btn btn-info ms-3 mb-3 text-white" style="width: 50%;" type="button" data-bs-target="#modal-${edukasi.id}" data-bs-toggle="modal">Check</button>
+              <button  class="btn btn-info ms-3 mb-3 text-white" style="width: 50%;" type="button" data-bs-target="#modal-${edukasi.id}" data-bs-toggle="modal">Selengkapnya</button>
 
               <!-- modal -->
               <div class="modal fade" id="modal-${edukasi.id}" aria-hidden="true" aria-labelledby="modal-label-${edukasi.id}" tabindex="-1">
@@ -76,7 +76,7 @@ function parseFourIdRes(res){
                   <p class="card-text">${res.deskripsi}</a>
               </div>
               
-              <button  class="btn btn-info ms-3 mb-3 text-white" style="width: 50%;" type="button" data-bs-target="#modal-${res.id}" data-bs-toggle="modal">Check</button>
+              <button  class="btn btn-info ms-3 mb-3 text-white" style="width: 50%;" type="button" data-bs-target="#modal-${res.id}" data-bs-toggle="modal">Selengkapnya</button>
 
               <!-- modal -->
               <div class="modal fade" id="modal-${res.id}" aria-hidden="true" aria-labelledby="modal-label-${res.id}" tabindex="-1">
