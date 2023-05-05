@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300&family=Roboto+Slab:wght@100;200;300;400;500;600&display=swap');
+
+:root {
+    --Snigle-font:'Sniglet',cursive;
+    --Rubik:'Rubik',cursive;
+    --Patua:'Patua',cursive;
+    --Plus:'Plus Jakarta Sans', sans-serif;
+    --Lobster:'Lobster',cursive;
+    --light-black:#2e2c2caf;
+    --bggradient:linear-gradient(to bottom, #56C4F2, #ddd);
+    --light-gray: rgba(255,255,255,0.75);
+    --main-color: #56C4F2;
+}
+
+* {
+    font-family: var(--Plus);
+}
+
+.banner {
+    background: url("https://i.ibb.co/tZMymgz/sayur-hijau.jpg") no-repeat center center;
+    background-size: cover;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    color: white;
+}
+
+.section-1{
+    margin-bottom: 10%;
+}
+
+.section-1 h4 {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.section-1 img {
+    margin-left: -2%;
+    margin-top: 10%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.section-1 button{
+    background-color: var(--main-color);
+    width: 80%;
+}
+
+.section-1 button:hover {
+    background-color: #4cbae9;
+    transition: 0.5s;
+}
+
+.txt {
+    color: var(--main-color);
+    margin-top: 8%;
+}
+
+.section-2 h3,h5{
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.card-title {
+    color: var(--main-color);
+}
