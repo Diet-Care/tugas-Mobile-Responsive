@@ -1,54 +1,55 @@
-export function login() {
-    //Mengambil element dengan id xhr-5-result
-    const result = document.querySelector("#xhr-5-result")
+export async function login(){
+    const btnsubmit2 = document.getElementById('submit-login');
 
-    //Memanggil function onClickGet dengan argumen dari variable result
-    onClickGet(result)
-    
-    //Memanggil function onClickReset dengan argumen dari variable result
-    onClickReset(result)
-}
-
-function onClickGet(result) {
-    //Inisiasi event listener dengan target dari hasil query selector yang mengambil element demgan id xhr-3
-    document.querySelector('#xhr-5').addEventListener('click', async () => {
-        //Inisiasi pada variable result konten yang berupa text akan diberi nilai kosong
-        let email = document.querySelector('#email').value
-        let password = document.querySelector('#password').value
-
-        console.log(email, password);
-
-        result.textContent = '';
-
-        //Inisiasi try catch strategi untuk menghandle error
-        try {
-            //Inisiasi pemanggilan API
-            let response = await fetch('https://6436ce2c3e4d2b4a12dc3844.mockapi.io/api/users')
-            
-            //Handle apabila response tidak oke
-            if (!response.ok) {
-                throw new Error(`HTTP error: ${response.status}`);
+    function onClick(res){
+     
+        btnsubmit2.addEventListener('click', async () =>{
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            try {
+                const response = await fetch("https://6436ce2c3e4d2b4a12dc3844.mockapi.io/api/users");
+          
+                console.log(response);
+                return parselogin(await response.json(), email, password);
+            } catch (error) {
+                console.log(error);
+                res.innerText = error;
             }
-
-        //     //Handle apabila response oke
-            result.innerHTML = parseResponse(await response.json(), email, password)
-        } catch(error) {
-            // Handle response error
-            result.innerHTML = error
-        }
-    })
-}
-
-function onClickReset(result) {
-    document.querySelector('#reset-5').addEventListener('click', () => {
-        result.textContent = '';
-    });
-}
-
-function parseResponse(responseJSON, email, password) {
-    for (let i=0; i<responseJSON.length; i++) {
-        if (responseJSON[i].email == email && responseJSON[i].password == password)
-        return "LOGIN SUCCESS"
+        })
     }
-    return "LOGIN FAILED"
+
+    function parselogin(resJSON, email, password){
+
+        const fail = document.getElementById('fail');
+        const success = document.getElementById('success');
+        let user = null;
+        for(let i = 0; i < resJSON.length; i++){
+            if(resJSON[i].email == email ){
+                user = resJSON[i];
+                break;
+            } 
+        }
+        if(user != null){
+            if(user.password == password) {
+                console.log("login success");
+                success.innerHTML = `<div class="alert alert-success" role="alert">
+                Login Success!
+              </div> `
+                window.location.href = "home.html";
+            } else{
+                console.log("login failed");
+                fail.innerHTML = `<div class="alert alert-danger" role="alert">
+               Login Failed!
+              </div> `
+            } 
+        } else{
+            console.log("login failed"); 
+            fail.innerHTML = `<div class="alert alert-danger" role="alert">
+               Login Failed!
+              </div> `
+        }
+        
+    }
+    onClick();
 }
+
