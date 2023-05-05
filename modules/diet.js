@@ -48,15 +48,18 @@ export function hitungDiet(){
             bmicategory.innerText = "Normal Weight";
             hasilumur.innerText = ` ${usia} kamu harus melakukan diet dibawah ini`;
             bmicategory.style.color = "green"; 
-          
+            getDietMakanan();
+            getfourdietOlhraga();
         } else if(bmi <= 29.9){
             bmicategory.innerText = "Overweight";
             hasilumur.innerText = ` ${usia} kamu harus melakukan diet dibawah ini`;
             bmicategory.style.color = "red"; 
+            getfourdietOlhraga();
         } else{
             bmicategory.innerText = "Obesity";
             bmicategory.style.color = "red"; 
             hasilumur.innerText = ` ${usia} kamu harus melakukan diet dibawah ini`;
+            getfourdietOlhraga();
         }
         teksolgraga.innerText = "Rekomendasi Olahraga";
         teksmakan.innerText = "Rekomendasi Makan";
