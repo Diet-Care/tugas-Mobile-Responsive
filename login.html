@@ -18,6 +18,8 @@
                         <h5>Masukkan Email dan Password Anda</h5>
 					</div>
 					<div class="card-body">
+						<div id="fail"></div>
+						<div id="success"></div>
 						<form class="mx-4">
 							<div class="form-group mb-3">
 								<input type="email" class="form-control" id="email" placeholder="Alamat Email">
@@ -27,10 +29,9 @@
                                 <button class="btn btn-info text-white" type="submit"><i class="bi bi-eye-fill"></i></button>
 							</div>
                             <div class="btn-login">
-							<button type="submit" class="btn btn-primary btn-block mb-2">Login</button>
                             </div>
-                            
 						</form>
+						<button type="submit" class="btn btn-primary btn-block mb-2 ms-4" id="submit-login" style="width: 90%;">Login</button>
 					</div>
 				</div>
 			</div>
