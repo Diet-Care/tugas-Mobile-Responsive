@@ -42,7 +42,7 @@ function parseFullIdRes(res){
                 </div>
               </div>
           </div>
-          </div>
+      </div>
       `;
   })
 };
