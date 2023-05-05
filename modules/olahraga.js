@@ -38,10 +38,10 @@ export async function getfullEdukasiOlhraga(){
                         
                         <h3 class="colors-blue mb-3">Deskripsi</h3>
                          <p class="mb-3">${respon.deskripsi}</p>
-                <h3 class="colors-blue mb-3">Deskripsi lengkap</h3>
-                <p class=" mb-3">${respon.deslengkap}</p>
-                <h3 class="colors-blue mb-3">Deskripsi Jumlah Kalori</h3>
-                <p class=" mb-3">${respon.jmlhkalori}</p>
+                        <h3 class="colors-blue mb-3 mt-3">Deskripsi lengkap</h3>
+                          <p class=" mb-3 ">${respon.deslengkap}</p>
+                          <h3 class="colors-blue mb-3">Deskripsi Jumlah Kalori</h3>
+                          <p class=" mb-3">${respon.jmlhkalori}</p>
                       </div>
                      
                     </div>
