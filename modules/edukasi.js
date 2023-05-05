@@ -35,7 +35,12 @@ function parseFullIdRes(res){
                     </div>
                     <div class="modal-body">
                       <img src="${edukasi.image}" class="card-img-top mb-5" alt="${edukasi.judul}" style="width: 100%; height: 200px;">
-                      ${edukasi.deskripsi}
+                        <h3 class="colors-blue mb-3">Deskripsi</h3>
+                         <p class="mb-3">${edukasi.deskripsi}</p>
+                        <h3 class="colors-blue mb-3 mt-3">Deskripsi lengkap</h3>
+                          <p class=" mb-3 ">${edukasi.deslengkap}</p>
+                          <h3 class="colors-blue mb-3">Deskripsi Jumlah Kalori</h3>
+                          <p class=" mb-3">${edukasi.jmlkalori}</p>
                     </div>
                    
                   </div>
@@ -89,7 +94,12 @@ function parseFourIdRes(res){
                     </div>
                     <div class="modal-body">
                       <img src="${res.image}" class="card-img-top mb-5" alt="${res.judul}" style="width: 100%; height: 200px;">
-                      ${res.deskripsi}
+                      <h3 class="colors-blue mb-3">Deskripsi</h3>
+                         <p class="mb-3">${res.deskripsi}</p>
+                        <h3 class="colors-blue mb-3 mt-3">Deskripsi lengkap</h3>
+                          <p class=" mb-3 ">${res.deslengkap}</p>
+                          <h3 class="colors-blue mb-3">Deskripsi Jumlah Kalori</h3>
+                          <p class=" mb-3">${res.jmlkalori}</p>
                     </div>
                    
                   </div>
