@@ -18,12 +18,12 @@
     color: var(--main-color);
 }
 
-.btn-login button {
+#submit-login {
     background-color: var(--main-color);
     width: 100%;
 }
 
-.btn-login button:hover {
+#submit-login {
     background-color: #4db1db;
     transition: 0.5s;
 }

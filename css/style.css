@@ -128,3 +128,8 @@ main .container .col-md-7 button{
 .pb-10{
     padding-bottom: 15%;
 }
+
+.dropdown button {
+    background-color: #56C4F2;
+    border: none;
+}
