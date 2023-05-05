@@ -1,4 +1,5 @@
-import { getDietMakanan } from "./routediet.js";
+
+import { getDietMakanan, getfourdietOlhraga } from "./routediet.js";
 
 
 export function hitungDiet(){
@@ -10,6 +11,9 @@ export function hitungDiet(){
 
     // variabel form
     const form = document.getElementById('form');
+
+    const teksolgraga = document.getElementById('teksolahraga');
+    const teksmakan = document.getElementById('teksmakanan');
 
     btnSubmit.addEventListener('click', function(){
         // input berat
@@ -36,8 +40,10 @@ export function hitungDiet(){
         if(bmi < 18.5){
         bmicategory.innerText = "Underweight";
         hasilumur.innerText = ` ${usia} kamu harus melakukan diet dibawah ini`;
+        
         bmicategory.style.color = "rgb(245, 147, 0)"; 
         getDietMakanan();
+        getfourdietOlhraga();
         } else if(bmi <= 24.9 ){
             bmicategory.innerText = "Normal Weight";
             hasilumur.innerText = ` ${usia} kamu harus melakukan diet dibawah ini`;
@@ -52,6 +58,8 @@ export function hitungDiet(){
             bmicategory.style.color = "red"; 
             hasilumur.innerText = ` ${usia} kamu harus melakukan diet dibawah ini`;
         }
+        teksolgraga.innerText = "Rekomendasi Olahraga";
+        teksmakan.innerText = "Rekomendasi Makan";
         
     });
 
@@ -59,6 +67,7 @@ export function hitungDiet(){
        
       form.reset();
       const fourEdukasi = document.getElementById('edu');
+      const dietolah = document.getElementById('dietolhraga');
       const bmitotal = document.getElementById("total-bmi");
       const bmicategory = document.getElementById("BMI-category");
       
@@ -66,8 +75,12 @@ export function hitungDiet(){
 
       bmitotal.innerText = '-';
       fourEdukasi.innerText = "";
+      dietolah.innerText = "";
       bmicategory.innerText = '';
       hasilumur.innerText = '';
+
+      teksolgraga.innerText = "";
+        teksmakan.innerText = "";
     });
 
 }
