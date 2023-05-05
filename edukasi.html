@@ -20,98 +20,57 @@
         </button>
         <div class="navbar-collapse collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active text-info fw-semibold " aria-current="page" href="index.html">Home</a>
+            <li class="nav-item ">
+              <a class="nav-link " aria-current="page" href="home.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link color-blue" onclick="alert('Silahkan login terlebih dahulu !')" href="login.html">Diet</a>
+              <a class="nav-link" href="hitung-diet.html">Diet</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link color-blue" onclick="alert('Silahkan login terlebih dahulu !')" href="login.html">Edukasi</a>
+              <a class="nav-link text-info fw-semibold active" href="edukasi.html">Edukasi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link color-blue" onclick="alert('Silahkan login terlebih dahulu !')" href="about.html">About Us</a>
+              <a class="nav-link" href="about.html">About Us</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
               <button class="btn btn-info text-white" type="submit"><i class="bi bi-search"></i></button>
             <input class="form-control ms-2" type="search" placeholder="Search" aria-label="Search" style="width: 65%;">
           </form>
-          <a href="login.html"><button type="button" class="btn btn-info text-white">Login</button></a>
+          <img src="https://i.ibb.co/gRj0dYC/profile.png" class="me-3" alt="profile" style="width: 5%;" border="0">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            </button>
+            <ul class="dropdown-menu text-start">
+              <li><a class="dropdown-item disabled" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="login.html">Logout</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
 
-    <main class="container text-left">
-          <div class="row">
-              <div class="col-md-7 col-sm-12">
-                  <h1>Ubah Gaya Hidupmu</h1>
-                  <P>Investasi terbaik adalah kesehatan diri kita.
-                      Mulailah menerapkan gaya hidup sehat dengan diet yang sesuai bagi tubuh kita.</P>
-                  <a href="login.html"><button onclick="alert('Silahkan login terlebih dahulu !')" class="btn btn-info text-white px-5 py-2">Cek rekomendasi diet</button></a>
+    <!-- konten -->
+     <div class="container mt-7 mb-5">
+      <h1 class="mt-5 colors-blue">Edukasi</h1>
+      
+        <div  id="getFullEdukasi"  class="row mt-5 mb-5">
+            <h2 class="colors-blue mb-4">Rekomendasi makanan</h2>
+        </div>
+        
+        <div  id="getfulledukasiolhraga"  class="row mt-5 mb-5">
+          <h2 class="colors-blue mb-4">Rekomendasi Olahraga</h2>
+        </div>
+     </div>
 
-              </div>
-              <div class="col-md-5 col-sm-12 h-25">
-              <img src="https://i.ibb.co/DChWtdr/main-image-removebg-preview.png" alt="home image" >
-              </div>
-          </div>
-        </div>
-        </div>
-            <section class="section-1">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="pray">
-                                <img src="assets/salad-vertical.jpg" alt="salad image">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="panel text-left">
-                                <h1>Apa itu gizi seimbang?</h1>
-                                <p class="pt-4">
-                                    Gizi seimbang adalah susunan makanan sehari-hari yang mengandung zat gizi dalam jenis dan jumlah yang sesuai dengan kebutuhan tubuh yaitu jenis kelamin, umur dan status kesehatan.
-                                </p>
-                                <p>Pola makan tidak seimbanhg meningkatkan risiko kekurangan atau kelebihan gizi yang dapat berdampak negatif pada kesehatan.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-    </main>
      
-     <!-- Rekomendasi Gizi seimbang -->
-    <div class="container">
-        <div class="row mt-5 mb-2">
-            <div class="col-3 colors-blue fw-bold fs-3 text-md-end">
-              <h5>Rekomendasi Gizi Seimbang</h5>
-            </div>
-            <div class="col-8 colors-blue mx-3">
-                <hr>
-            </div>
-        </div>
-        <div class="mb-4">
-          <a href="login.html" class="link-underline link-underline-opacity-0">
-            <h6 class="text-end colors-blue fw-bold px-5 ">See All  <span class="ms-1"> ></span></h6>
-          </a>
-        </div>
 
-        <div class="container mt-5">
-          <h2 class="colors-blue mb-4">Rekomendasi makanan</h2>
-          <div  id="getFourEdukasi"  class="row mb-5">
-  
-          </div>
-        </div>
-    </div>
-  
-       
-
-                    
-    <!-- footer -->
+      <!-- footer -->
     <div>
 
     </div>
-    <footer class="footer mt-5 ">
-        <div  class="container mt-4">
+      <footer class=" footer">
+        <div  class="container">
           <div class="row">
             <div class="col-lg-4">
               <a class="navbar-brand " href="#"><img src="assets/logo-no-background.png" alt="icons-dica" width="170px" height="130px"></a>
@@ -126,7 +85,7 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-1 mb-4">
+                  <div class="col-1 mb-4">
                   <i class="bi bi-telephone colors-blue"></i>
                 </div>
                 <div class="col">
@@ -137,17 +96,17 @@
 
             <div class="col-lg-2">
               <h6 class="colors-blue mb-4">Layanan Kami</h6>
-                <a class="dropdown-item mb-3 color-blue" href="login.html">Diet Sehat</a>
-                <a class="dropdown-item mb-3 color-blue" href="login.html">Edukasi</a>
-                <a class="dropdown-item mb-3 color-blue" href="login.html">Rekemondasi Makanan</a>
-                <a class="dropdown-item mb-4 color-blue" href="login.html">Rekomnedasi Olahrga</a>
+                <a class="dropdown-item mb-3 color-blue" href="#">Diet Sehat</a>
+                <a class="dropdown-item mb-3 color-blue" href="edukasi.html">Edukasi</a>
+                <a class="dropdown-item mb-3 color-blue" href="#">Rekemondasi Makanan</a>
+                <a class="dropdown-item mb-4 color-blue" href="#">Rekomnedasi Olahrga</a>
             </div>
 
             <div class="col-lg-2">
               <h6 class="colors-blue mb-4">Support</h6>
-              <a class="dropdown-item mb-3 color-blue" href="login.html">Tentang DietCare</a>
-                <a class="dropdown-item mb-3 color-blue disabled" href="#">Kebijakan & Privasi</a>
-                <a class="dropdown-item mb-4 color-blue disabled" href="#">Hubungi Kami</a>
+              <a class="dropdown-item mb-3 color-blue" href="#">Tentang DietCare</a>
+                <a class="dropdown-item mb-3 color-blue" href="#">Kebijakan & Privasi</a>
+                <a class="dropdown-item mb-4 color-blue" href="#">Hubungi Kami</a>
             </div>
 
             <div class="col-lg-4">
@@ -161,8 +120,11 @@
           </div>
          
         </div>
+
+        <!-- footer -->
+
         <div class=" footer"></div>
-        <div  class="container">
+        <div  class="container mt-4">
             <div class="row ">
               <div class="col-md-3"> 
                 <div class="row mb-3">
@@ -185,9 +147,10 @@
             
          
         </div>
-    </footer>
-    
+      </footer>
+
     <!-- script js -->
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js" type="module"></script>
   </body>
